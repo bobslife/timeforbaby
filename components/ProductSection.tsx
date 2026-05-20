@@ -54,7 +54,7 @@ export function ProductSection({
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="max-h-[86vh] w-full max-w-[42rem] overflow-hidden rounded-[1.5rem] border border-[#ead8c7] bg-[#fffaf4] shadow-[0_24px_70px_rgba(47,31,25,0.28)]"
+            className="max-h-[86vh] w-full max-w-[42rem] overflow-hidden rounded-[1.5rem] border border-[#ead8c7] bg-[#fffaf4] shadow-[0_24px_70px_rgba(47,31,25,0.28)] lg:max-w-[min(92vw,1200px)]"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-4 border-b border-[#ead8c7] px-5 py-4">
@@ -79,7 +79,7 @@ export function ProductSection({
               </button>
             </div>
             <div className="max-h-[68vh] overflow-y-auto px-4 py-4 sm:px-5">
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
                 {products.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
